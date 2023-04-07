@@ -2,8 +2,8 @@
 	"name" : "NDI Monitor Standalone",
 	"version" : 1,
 	"creationdate" : 3763675452,
-	"modificationdate" : 3763676996,
-	"viewrect" : [ 72.0, 124.0, 300.0, 500.0 ],
+	"modificationdate" : 3763735291,
+	"viewrect" : [ 29.0, 109.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -36,6 +36,11 @@
 				"kind" : "file",
 				"local" : 1
 			}
+,
+			"ndi-fccla.ico" : 			{
+				"kind" : "file",
+				"local" : 1
+			}
 
 		}
 
@@ -46,6 +51,14 @@
 	}
 ,
 	"searchpath" : 	{
+		"0" : 		{
+			"bootpath" : "~/Documents/Programming/NDI Monitor Standalone/other",
+			"projectrelativepath" : "./other",
+			"label" : "icon",
+			"recursive" : 1,
+			"enabled" : 1,
+			"includeincollective" : 1
+		}
 
 	}
 ,
