@@ -44,10 +44,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1365.0, 165.0, 1016.0, 22.0 ],
+					"patching_rect" : [ 1365.0, 165.0, 973.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "Macintosh HD:/Users/CameronJohnston/Documents/Programming/NDI Monitor Standalone/other/ndi-fccla.icns",
+						"appicon_mac" : "Macintosh HD:/Users/soundteamadmin/Documents/GitHub/NDI-Monitor-Standalone/other/ndi-fccla.icns",
 						"appicon_win" : "",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
@@ -66,7 +66,7 @@
 						"usesearchpath" : 0
 					}
 ,
-					"text" : "standalone @statusvisible 0 @cantclosetoplevelpatchers 0 @appicon_mac \"Macintosh HD:/Users/CameronJohnston/Documents/Programming/NDI Monitor Standalone/other/ndi-fccla.icns\""
+					"text" : "standalone @statusvisible 0 @cantclosetoplevelpatchers 0 @appicon_mac \"Macintosh HD:/Users/soundteamadmin/Documents/GitHub/NDI-Monitor-Standalone/other/ndi-fccla.icns\""
 				}
 
 			}
@@ -1732,7 +1732,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"items" : [ "FCC-LAP01 (FCCLA-MACMINI-01.LOCAL (ProPresenter))", ",", "FCC-LAP01 (SANCTUARY PTZ (Balcony, 192.168.112.10))", ",", "FCC-LAP01 (FCCLA-MACMINI-01.LOCAL (QR-NDI))", ",", "FCCLA-MACMINI-01.LOCAL (ProPresenter)", ",", "FCCLA-MACMINI-01.LOCAL (QR-NDI)", ",", "SANCTUARY PTZ (Balcony, 192.168.112.10)" ],
+					"items" : [ "FCCLA-MACMINI-01.LOCAL (ProPresenter)", ",", "FCCLA-MACMINI-01.LOCAL (QR-NDI)", ",", "FCC-LAP01 (FCCLA-MACMINI-01.LOCAL (ProPresenter))", ",", "FCC-LAP01 (USB Video)", ",", "FCC-LAP01 (Intel UHD Graphics 620 1)", ",", "FCC-LAP01 (FCCLA-MACMINI-01.LOCAL (QR-NDI))", ",", "FCC-LAP01 (SANCTUARY PTZ (Balcony, 192.168.112.10))", ",", "SANCTUARY PTZ (Transept, 192.168.112.13)", ",", "SANCTUARY PTZ (Balcony, 192.168.112.10)", ",", "SANCTUARY PTZ (Pulpit, 192.168.112.11)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
