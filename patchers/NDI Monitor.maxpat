@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 414.0, 209.0, 377.0, 198.0 ],
+		"rect" : [ 5.0, 106.0, 377.0, 198.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,15 +40,75 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1470.0, 75.0, 72.0, 22.0 ],
+					"text" : "ndi-fccla.ico"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1470.0, 135.0, 92.0, 22.0 ],
+					"text" : "appicon_win $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1365.0, 75.0, 78.0, 22.0 ],
+					"text" : "ndi-fccla.icns"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1365.0, 135.0, 97.0, 22.0 ],
+					"text" : "appicon_mac $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1365.0, 45.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1365.0, 165.0, 973.0, 22.0 ],
+					"patching_rect" : [ 1365.0, 165.0, 322.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "Macintosh HD:/Users/soundteamadmin/Documents/GitHub/NDI-Monitor-Standalone/other/ndi-fccla.icns",
-						"appicon_win" : "",
+						"appicon_mac" : "ndi-fccla.icns",
+						"appicon_win" : "ndi-fccla.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 0,
@@ -66,7 +126,7 @@
 						"usesearchpath" : 0
 					}
 ,
-					"text" : "standalone @statusvisible 0 @cantclosetoplevelpatchers 0 @appicon_mac \"Macintosh HD:/Users/soundteamadmin/Documents/GitHub/NDI-Monitor-Standalone/other/ndi-fccla.icns\""
+					"text" : "standalone @statusvisible 0 @cantclosetoplevelpatchers 0"
 				}
 
 			}
@@ -1732,7 +1792,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"items" : [ "FCCLA-MACMINI-01.LOCAL (ProPresenter)", ",", "FCCLA-MACMINI-01.LOCAL (QR-NDI)", ",", "FCC-LAP01 (FCCLA-MACMINI-01.LOCAL (ProPresenter))", ",", "FCC-LAP01 (USB Video)", ",", "FCC-LAP01 (Intel UHD Graphics 620 1)", ",", "FCC-LAP01 (FCCLA-MACMINI-01.LOCAL (QR-NDI))", ",", "FCC-LAP01 (SANCTUARY PTZ (Balcony, 192.168.112.10))", ",", "SANCTUARY PTZ (Transept, 192.168.112.13)", ",", "SANCTUARY PTZ (Balcony, 192.168.112.10)", ",", "SANCTUARY PTZ (Pulpit, 192.168.112.11)" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1775,6 +1835,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
 					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-106", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"source" : [ "obj-107", 0 ]
 				}
 
 			}
@@ -2501,6 +2589,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"order" : 1,
+					"source" : [ "obj-84", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"order" : 0,
+					"source" : [ "obj-84", 0 ]
 				}
 
 			}
